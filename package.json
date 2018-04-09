@@ -1,0 +1,52 @@
+{
+  "name": "vajehyab",
+  "version": "1.0.0",
+  "description": "VajehYab API client written in JS",
+  "main": "lib/index.js",
+  "author": "Parsa Kafi <parselearn@gmail.com> (http://parsa.ws)",
+  "license": "MIT",
+  "scripts": {},
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "vajehyab",
+    "api",
+    "web",
+    "vajeh",
+    "dehkhoda",
+    "moein",
+    "amid",
+    "motaradef",
+    "farhangestan",
+    "sareh",
+    "ganjvajeh",
+    "wiki",
+    "slang",
+    "quran",
+    "name",
+    "thesis",
+    "isfahani",
+    "bakhtiari",
+    "tehrani",
+    "dezfuli",
+    "gonabadi",
+    "mazani",
+    "en2fa",
+    "ar2fa",
+    "fa2en",
+    "fa2ar",
+    "translate"
+  ],
+  "dependencies": {
+    "request": "^2.85.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parsakafi/vajehyab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/parsakafi/vajehyab/issues"
+  },
+  "homepage": "https://github.com/parsakafi/vajehyab"
+}
