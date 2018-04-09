@@ -6,7 +6,7 @@ VajehYab API client written in JS
 npm install vajehyab --save
 ```
 Usage   
-You can get VajehYab API token from [Developer Page](http://api.vajehyab.com/i/developer) ([API Document](http://api.vajehyab.com/api/documentation))
+You can get VajehYab API token from [Developer Page](http://api.vajehyab.com/i/developer) ([API Documentation](http://api.vajehyab.com/api/documentation))
 ```shell
 const VajehYab = require('vajehyab');
 const vajehyabToken = process.env.vajehyabToken; // VajehYab API Token
