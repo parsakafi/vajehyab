@@ -46,7 +46,7 @@ This method is used to search for a term or phrase. The meaning of the word is l
   - `type`: The search type, You can set 'exact','ava','like','text'. Default is `exact`, (Optional)
   - `start`: The start row. Default is `0`, (Optional)
   - `rows`: The response rows. Default is `10`, (Optional)
-  - `filter`: The Database names with priority. Default is `dehkhoda,moein,amid,motaradef,farhangestan,sareh,ganjvajeh,wiki,slang,quran,name,thesis,isfahani,bakhtiari,tehrani,dezfuli,gonabadi,mazani,en2fa,ar2fa,fa2en,fa2ar`, (Optional)
+  - `filter`: The Database names with priority. Default is `dehkhoda, moein, amid, motaradef, farhangestan, sareh, ganjvajeh, wiki, slang, quran, name, thesis, isfahani, bakhtiari, tehrani, dezfuli, gonabadi, mazani, en2fa, ar2fa, fa2en, fa2ar`, (Optional)
   
 Example
 ```js
