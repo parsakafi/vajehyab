@@ -2,12 +2,12 @@
 VajehYab API client written in JS
 
 ## Install
-```shell
+```bash
 npm install vajehyab --save
 ```
 Usage   
 You can get VajehYab API token from [Developer Page](http://api.vajehyab.com/i/developer) ([API Documentation](http://api.vajehyab.com/api/documentation))
-```shell
+```js
 const VajehYab = require('vajehyab');
 const vajehyabToken = process.env.vajehyabToken; // VajehYab API Token
 const client = new VajehYab(vajehyabToken, {ip, product, prettyprint, debug});
@@ -20,7 +20,7 @@ const client = new VajehYab(vajehyabToken, {ip, product, prettyprint, debug});
   - `debug`: The debug mode. Default is `false`, (Optional)
   
 Example
-```shell
+```js
 const VajehYab = require('vajehyab');
 const vajehyabToken = process.env.vajehyabToken; // VajehYab API Token
 const client = new VajehYab(vajehyabToken, {ip:'222.2.65.3', product: 'Test', prettyprint: true, debug: false});
@@ -31,7 +31,7 @@ All method using `async`/`await` in Node >= 8
 ### Search   
 
 This method is used to search for a term or phrase. The meaning of the word is limited and insert "..." at the end.   
-```shell
+```js
 (async () => {
     try {
         const search = await client.search(q, {type, start, rows, filter});
@@ -49,7 +49,7 @@ This method is used to search for a term or phrase. The meaning of the word is l
   - `filter`: The Database names with priority. Default is `dehkhoda,moein,amid,motaradef,farhangestan,sareh,ganjvajeh,wiki,slang,quran,name,thesis,isfahani,bakhtiari,tehrani,dezfuli,gonabadi,mazani,en2fa,ar2fa,fa2en,fa2ar`, (Optional)
   
 Example
-```shell
+```js
 (async () => {
     try {
         const search = await client.search('رایانه');
@@ -59,14 +59,14 @@ Example
     }
 })();
 ```
-```shell
+```js
 const search = await client.search('رایانه', {type: 'like', start: 0, rows: 10, filter: 'dehkhoda,moein,amid'});
 console.log(search);
 ```
 ### Word Detail:
 
 This method is used to get the full meaning of a word. It is possible with HTML tags.
-```shell
+```js
 const word = await client.word(title, db, num);
 ```
 - `params`
@@ -75,27 +75,27 @@ const word = await client.word(title, db, num);
   - `num`: The `num` parameter form search method response
   
 Example
-```shell
+```js
 const word = await client.word('ایران', 'dehkhoda', 1);
 console.log(word);
 ```
 
 ### Suggest Word:
 The proposed list is used for autocomplete.
-```shell
+```js
 const suggest = await client.suggest(q);
 ```
 - `params`
   - `q`: The search word
   
 Example
-```shell
+```js
 const suggest = await client.suggest('ایران');
 console.log(suggest);
 ```
 
 ### Express Example
-```shell
+```js
 const VajehYab = require('vajehyab');
 const vajehyabToken = process.env.vajehyabToken; // VajehYab API Token
 const client = new VajehYab(vajehyabToken, {ip:'222.2.65.3', product: 'Test', prettyprint: true, debug: false});
