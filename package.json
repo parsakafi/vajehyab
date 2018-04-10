@@ -1,6 +1,6 @@
 {
   "name": "vajehyab",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "VajehYab API client written in JS",
   "main": "lib/index.js",
   "author": "Parsa Kafi <parselearn@gmail.com> (http://parsa.ws)",
